@@ -1,0 +1,10 @@
+[Inputs]
+S
+=D0[3:0]=
+=D1[3:0]=
+[Outputs]
+=Dout[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX2T1_4
+

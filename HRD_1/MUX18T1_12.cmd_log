@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/HRD_4/HRD_1/MUX18T1_12.v -lang verilog -prj HRD_1 -o MUX18T1_12.spl -module MUX18T1_12 -template D:/Xilinx2/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX18T1_12.spl E:/HRD_4/HRD_1/MUX18T1_12.sym 

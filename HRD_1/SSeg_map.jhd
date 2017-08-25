@@ -1,0 +1,5 @@
+MODULE SSeg_map
+	SUBMODULE half_SSeg_map
+		INSTANCE XLXI_83
+	SUBMODULE half_SSeg_map
+		INSTANCE XLXI_84

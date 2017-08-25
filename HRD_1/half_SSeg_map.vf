@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : half_SSeg_map.vf
+// /___/   /\     Timestamp : 12/23/2016 13:11:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath E:/HRD_1/ipcore_dir -intstyle ise -family kintex7 -verilog E:/HRD_1/half_SSeg_map.vf -w E:/HRD_1/half_SSeg_map.sch
+//Design Name: half_SSeg_map
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module half_SSeg_map(Disp_num, 
+                     Seg_map);
+
+    input [31:0] Disp_num;
+   output [31:0] Seg_map;
+   
+   
+   BUF  XLXI_15 (.I(Disp_num[30]), 
+                .O(Seg_map[31]));
+   BUF  XLXI_16 (.I(Disp_num[15]), 
+                .O(Seg_map[30]));
+   BUF  XLXI_17 (.I(Disp_num[11]), 
+                .O(Seg_map[29]));
+   BUF  XLXI_18 (.I(Disp_num[23]), 
+                .O(Seg_map[28]));
+   BUF  XLXI_19 (.I(Disp_num[31]), 
+                .O(Seg_map[27]));
+   BUF  XLXI_20 (.I(Disp_num[22]), 
+                .O(Seg_map[26]));
+   BUF  XLXI_21 (.I(Disp_num[10]), 
+                .O(Seg_map[25]));
+   BUF  XLXI_22 (.I(Disp_num[3]), 
+                .O(Seg_map[24]));
+   BUF  XLXI_27 (.I(Disp_num[28]), 
+                .O(Seg_map[23]));
+   BUF  XLXI_28 (.I(Disp_num[14]), 
+                .O(Seg_map[22]));
+   BUF  XLXI_29 (.I(Disp_num[9]), 
+                .O(Seg_map[21]));
+   BUF  XLXI_30 (.I(Disp_num[21]), 
+                .O(Seg_map[20]));
+   BUF  XLXI_31 (.I(Disp_num[29]), 
+                .O(Seg_map[19]));
+   BUF  XLXI_32 (.I(Disp_num[20]), 
+                .O(Seg_map[18]));
+   BUF  XLXI_33 (.I(Disp_num[8]), 
+                .O(Seg_map[17]));
+   BUF  XLXI_34 (.I(Disp_num[2]), 
+                .O(Seg_map[16]));
+   BUF  XLXI_67 (.I(Disp_num[26]), 
+                .O(Seg_map[15]));
+   BUF  XLXI_68 (.I(Disp_num[13]), 
+                .O(Seg_map[14]));
+   BUF  XLXI_69 (.I(Disp_num[7]), 
+                .O(Seg_map[13]));
+   BUF  XLXI_70 (.I(Disp_num[19]), 
+                .O(Seg_map[12]));
+   BUF  XLXI_71 (.I(Disp_num[27]), 
+                .O(Seg_map[11]));
+   BUF  XLXI_72 (.I(Disp_num[18]), 
+                .O(Seg_map[10]));
+   BUF  XLXI_73 (.I(Disp_num[6]), 
+                .O(Seg_map[9]));
+   BUF  XLXI_74 (.I(Disp_num[1]), 
+                .O(Seg_map[8]));
+   BUF  XLXI_75 (.I(Disp_num[24]), 
+                .O(Seg_map[7]));
+   BUF  XLXI_76 (.I(Disp_num[12]), 
+                .O(Seg_map[6]));
+   BUF  XLXI_77 (.I(Disp_num[5]), 
+                .O(Seg_map[5]));
+   BUF  XLXI_78 (.I(Disp_num[17]), 
+                .O(Seg_map[4]));
+   BUF  XLXI_79 (.I(Disp_num[25]), 
+                .O(Seg_map[3]));
+   BUF  XLXI_80 (.I(Disp_num[16]), 
+                .O(Seg_map[2]));
+   BUF  XLXI_81 (.I(Disp_num[4]), 
+                .O(Seg_map[1]));
+   BUF  XLXI_82 (.I(Disp_num[0]), 
+                .O(Seg_map[0]));
+endmodule

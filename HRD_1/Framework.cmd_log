@@ -1,0 +1,151 @@
+sch2hdl -sympath E:/HRD_1/ipcore_dir -intstyle ise -family kintex7 -verilog Framework_drc.vf -w E:/HRD_1/Framework.sch 
+sch2hdl -sympath E:/HRD_1/ipcore_dir -intstyle ise -family kintex7 -verilog Framework_drc.vf -w E:/HRD_1/Framework.sch 
+xst -intstyle ise -ifn "E:/HRD_1/Framework.xst" -ofn "E:/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/HRD/HRD.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+xst -intstyle ise -ifn "E:/HRD_1/Framework.xst" -ofn "E:/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/HRD/HRD.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/HRD_1/Framework.xst" -ofn "E:/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/HRD/HRD.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "E:/HRD_1/Framework.xst" -ofn "E:/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "E:/HRD_1/Framework.xst" -ofn "E:/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/HRD/HRD.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_2/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/HRD_4/HRD_1/Framework.xst" -ofn "E:/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "E:/HRD_4/HRD_1/Framework.xst" -ofn "E:/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "E:/HRD_4/HRD_1/Framework.xst" -ofn "E:/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "E:/HRD_4/HRD_1/Framework.xst" -ofn "E:/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+sch2hdl -sympath C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/ipcore_dir -intstyle ise -family kintex7 -verilog Framework_drc.vf -w C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.sch 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/CST/Desktop/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.xst" -ofn "C:/Users/asus/Desktop/Project/HRD_11/HRD_10/HRD_9/HRD_8/HRD_7/HRD_4/HRD_1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
