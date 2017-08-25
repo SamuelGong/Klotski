@@ -1,4 +1,0 @@
-vhdtdtfi -lib work E:/HRD_1/MUX8T1_4.v -lang verilog -prj HRD_1 -o MUX8T1_4.spl -module MUX8T1_4 -template D:/Xilinx2/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 MUX8T1_4.spl E:/HRD_1/MUX8T1_4.sym 
-vhdtdtfi -lib work C:/Users/CST/Desktop/HRD_2/HRD_1/MUX8T1_4.v -lang verilog -prj HRD_1 -o MUX8T1_4.spl -module MUX8T1_4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 MUX8T1_4.spl C:/Users/CST/Desktop/HRD_2/HRD_1/MUX8T1_4.sym 

@@ -1,2 +1,0 @@
-vhdtdtfi -lib work C:/Users/CST/Desktop/HRD_2/HRD_1/MUX2T1_5.v -lang verilog -prj HRD_1 -o MUX2T1_5.spl -module MUX2T1_5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 MUX2T1_5.spl C:/Users/CST/Desktop/HRD_2/HRD_1/MUX2T1_5.sym 
