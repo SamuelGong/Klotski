@@ -1,29 +1,63 @@
 # 1. OVERVIEW
-*MiniSQL*, as its name reveals, is a **light weight database management system** in **SQL**.
-As a homework assigned in the **database system** course for sophomore majoring in CS,
+*Klotski*, as its name reveals, is a **platform** for traditional game **Klotki** in **Chinese** version,
+namely **Huangrongdao**.
+As a homework assigned in the **digital logic design** course for sophomore majoring in CS,
 it is an **individual project** for **non-comercial** purposes.
-This system allows you to manage databases in simple SQL statement,
-and these databases are supposed to store in your computers locally.
+This system allows you to play Klotski with several given beginnings on Xilinx FPGA, like what is illustrated as follows:  
 
-![](./images/overview_1.png)
+![](./images/overview_1.png)  
 
 # 2. FUNCTIONS
+The platform is designed to contain all these following functions:  
+![](./images/function_1.png)  
 
 # 3. ARCHITECTURE
-
+The overall sketch of the architecture can been described as follows:
+![](./images/architecture_1.png)  
 
 # 4. USAGE
 Make sure that the consistence of relative paths among all the folders.
-##The hierarchy of the file:
-- MiniSQL: source code
-- catalog: catalog files
-- record: record files
-- index: index files
-- execFile: files that can exec in MiniSQL
-- images: images used in readme  
+## The hierarchy of the file:
+- images: images for Readme
+- coe: files to initial RAM and ROM on FPGA
+- ngc: IP-cores for certain modules
+- sch: schemes for certain modules
+- sym: files that record the symbolic features of elements
+- ucf: physical constrain
+- v: codes for certain modules
 
-##To exemplify, following are snapshots of some sequential operations:
+## How to build
+First create an empty ISE project, and then include all the sym files. Next start with the file Framework.sch.  
+Here is the sample hierarchy:  
+![](./images/usage_6.png)  
+  
+![](./images/usage_7.png)  
 
+## Interfaces
+- First one must get familiar with the interfaces:  
+Interfaces on board for players:  
+  
+![](./images/usage_8.png)  
+Interfaces on board for developers:  
+![](./images/usage_9.png)  
+Interfaces on screen for both players and developers:  
+![](./images/usage_10.png)  
+
+## Sample game
+1. Use SW[3:1] to select a beginning, press rst for a while to start.
+![](./images/usage_1.png)  
+2. In order to traverse the chessmen in the board, press C for forward traversal and E for backward until 
+you select the expected one. The selected chessman will be higtlighted.
+In the sample, the soldier at the bottom left corner is selected and to be moved.  
+![](./images/usage_2.png)  
+3. In order to move the selected chessman, press 5, A, D and 8 for moving up, right, down and left respectively.  
+In the sample, the soldier seleced has been moved to the right by 1 step.  
+![](./images/usage_3.png)  
+4. One don't manage to finish the game until he has move the 2\*2 chessman, namely Caocao, to the very bottom of the board.  
+Like this:  
+![](./images/usage_4.png)  
+5. When game is over, there will be a prompt "You win!" displaying, as well as the number of steps the user has taken.  
+![](./images/usage_5.jpg)  
   
 # 5. LICENCE
 The content of all the codes are supposed to use a licence [AGPLv3](./LICENCE)  
