@@ -59,7 +59,7 @@ Like this:
 5. When game is over, there will be a prompt "You win!" displaying, as well as the number of steps the user has taken.  
 ![](./images/usage_5.jpg)  
   
-# 5. LICENCE
+# 5. LICENSE
 The content of all the codes are supposed to use a licence [AGPLv3](./LICENSE)  
 
 # 6. HOW TO CONTRIBUTE
