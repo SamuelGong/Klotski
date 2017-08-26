@@ -60,7 +60,7 @@ Like this:
 ![](./images/usage_5.jpg)  
   
 # 5. LICENCE
-The content of all the codes are supposed to use a licence [AGPLv3](./LICENCE)  
+The content of all the codes are supposed to use a licence [AGPLv3](./LICENSE)  
 
 # 6. HOW TO CONTRIBUTE
 1. Learn what is a AGPLv3, if you have not yet done so (see details above).  
